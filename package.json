@@ -1,0 +1,101 @@
+{
+  "name": "ssh-smb-folder",
+	"displayName": "SSH for SMB Folder",
+	"description": "Access SMB folder via SSH for remote development with laravel vallet on server.",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.65.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"author": {
+		"email": "hendra_eddy@ymail.com",
+		"name": "Hendra Eddy"
+	},
+	"activationEvents": [
+        "onCommand:ssh-smb-folder.connect"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "ssh-smb-folder.connect",
+				"title": "SSH-SMB-Folder: Connect"
+			}],
+		
+		"configuration": {
+			"type": "object",
+			"title": "SSH-SMB-Folder",
+			"properties": {
+					
+					"sshSmbFolder.connection.name": {
+						"type": "string",
+						"default": "Connection",
+						"description": "Name of connection."
+					},
+					"sshSmbFolder.connection.user": {
+						"type": "string",
+						"default": "root",
+						"description": "User for connection."
+					},
+					"sshSmbFolder.connection.password": {
+						"type": "string",
+						"default": "null",
+						"description": "Password for connection."
+					},
+					"sshSmbFolder.connection.host": {
+						"type": "string",
+						"default": "localhost",
+						"description": "Host for connection."
+					},
+					"sshSmbFolder.connection.port": {
+						"type": "number",
+						"default": "22",
+						"description": "Port for connection."
+					},
+					"sshSmbFolder.connection.enableKeyFile": {
+						"type": "boolean",
+						"default": "false",
+						"description": "Enable if you use keyFile for connection."
+					},
+					"sshSmbFolder.connection.keyFile": {
+						"type": "string",
+						"default": "~/.ssh/id_rsa",
+						"description": "Path of key for connection."
+					},
+					"sshSmbFolder.connection.prefixPath": {
+						"type": "string",
+						"default": "~/",
+						"description": "Prefix of path SMB folder on the server."
+					},
+					"sshSmbFolder.connection.delay": {
+						"type": "number",
+						"default": "5",
+						"description": "Delay/Timeout for connecting to the remote server."
+					}
+			}
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"pretest": "npm run compile && npm run lint",
+		"lint": "eslint src --ext ts",
+		"test": "node ./out/test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.65.0",
+		"@types/glob": "^7.2.0",
+		"@types/mocha": "^9.1.0",
+		"@types/node": "14.x",
+		"@typescript-eslint/eslint-plugin": "^5.12.1",
+		"@typescript-eslint/parser": "^5.12.1",
+		"eslint": "^8.9.0",
+		"glob": "^7.2.0",
+		"mocha": "^9.2.1",
+		"typescript": "^4.5.5",
+		"@vscode/test-electron": "^2.1.2"
+	}
+}
