@@ -38,7 +38,6 @@
 			"type": "object",
 			"title": "SSH-SMB-Folder",
 			"properties": {
-					
 					"sshSmbFolder.connection.name": {
 						"type": "string",
 						"default": "Connection",

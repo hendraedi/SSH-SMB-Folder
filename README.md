@@ -4,7 +4,7 @@ This is application for private usage, but if you want to use this extension, yo
 
 I'm use SSH server on Raspberry Pi and SMB Folder on Raspberry Pi.
 
-I'm build this extension for access smb folder in remote server via remote terminal, because i'm access some smb folder with new remote drive in windows like drive Z: and then i'm use this smb folder for developing website application with Laravel Vallet.
+I'm build this extension for access smb folder on remote server via remote terminal, because i'm access some smb folder with new remote drive in windows like drive Z: and then i'm use this smb folder for developing website application with Laravel Vallet.
 
 I get bored every time developing some application i must write some command in terminal for use command like `php artisan migrate` and etc on the remote terminals.
 
