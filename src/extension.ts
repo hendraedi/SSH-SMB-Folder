@@ -1,8 +1,6 @@
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
 import * as vscode from 'vscode';
-import * as fs from "fs";
-import { isNumber } from 'util';
 
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
@@ -52,7 +50,6 @@ export function activate(context: vscode.ExtensionContext) {
 				let command = "ssh " + user + "@" + host + " -p " + port;
 				terminal.sendText(command);
 			}
-			let delayEx = 0;
 			
 			inPass(delayEx);
 			async function inPass(second: number) {
