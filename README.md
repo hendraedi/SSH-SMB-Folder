@@ -1,33 +1,37 @@
-# SSH for remote SMB Directory with Laravel Vallet Usage
+# SSH for access SMB Directory with Terminal
 
-This is application for private usage, but if you want use this apps then you can download.
+This is application for private usage, but if you want to use this extension, you can download it.
+
+I'm use SSH server on Raspberry Pi and SMB Folder on Raspberry Pi.
+
+I'm build this extension for access smb folder in remote server via remote terminal, because i'm access some smb folder with new remote drive in windows like drive Z: and then i'm use this smb folder for developing website application with Laravel Vallet.
+
+I get bored every time developing some application i must write some command in terminal for use command like `php artisan migrate` and etc on the remote terminals.
 
 ## Features
 
-This need putty/ssh installed on your computer.
-
-I'm test in windows and this work for me.
-
-I'm not test in other operating system like Linux, Mac and Other.
-
-For usage this extension:
-
-<!-- \!\[feature X\]\(images/feature-x.png\) -->
-
-> Usage: Please install putty/ssh in your computer and you open the setting then search SSH, you need configure this extension before you use this extension.
+Access remote SMB folder with remote terminal.
 
 ## Requirements
 
 - Install putty/ssh on your computer.
-- This tested on Windows only.
+- This tested on VScode for Windows only.
+- This tested and connected to SSH Server without `keyFile`.
+- This never tested with `keyFile` but you can test if is work.
+- Tested on SSH Server at Linux.
+For usage this extension:
+
+<!-- \!\[feature X\]\(images/feature-x.png\) -->
+
+> Note: Please install putty/ssh in your computer and you open the setting extension on VScode, you need configure this extension before you use.
 
 ## Extension Settings
 
-You need configure before use this extension `sshSmbFolder.connection` extension point.
+You need configure before use this extension, `sshSmbFolder.connection` is extension point.
 
 For example:
 
-This extension contributes the following settings:
+This extension you need the following settings:
 
 * `sshSmbFolder.connection.name`: write something for the name connection.
 * `sshSmbFolder.connection.user`: write your username for connect the remote server via SSH.
@@ -49,24 +53,14 @@ But maybe i'm not fast response or response your call if not insterested.
 
 This first release for extension.
 
-### 1.0.0
+### 0.0.1
 
-Initial release of ...
+Initial release
 
 -----------------------------------------------------------------------------------------------------------
 ## Following extension guidelines
 
 Ensure that you've read through the extensions guidelines and follow the best practices for use this extension.
-
-<!-- * [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets -->
 
 ### For more information
 
