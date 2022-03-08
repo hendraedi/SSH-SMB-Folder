@@ -13,6 +13,16 @@
 		"email": "hendra_eddy@ymail.com",
 		"name": "Hendra Eddy"
 	},
+	"license": "LICENSE.txt",
+	"bugs": {
+    "url": "https://github.com/hendraedi/SSH-SMB-Folder/issues",
+    "email": "hendra_eddy@ymail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hendraedi/SSH-SMB-Folder.git"
+  },
+  "homepage": "https://github.com/hendraedi/SSH-SMB-Folder/blob/main/README.md",
 	"activationEvents": [
         "onCommand:ssh-smb-folder.connect"
 	],
